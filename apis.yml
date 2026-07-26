@@ -1,7 +1,26 @@
 aid: dejavu
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/dejavu.png
 name: dejavu
-description: dejavu is a company surfaced as a portfolio company of a16z and added to the API Evangelist
-  network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: dejavu is a spatial-computing and 3D graphics startup founded by XR entrepreneur
+  Matt Miesnieks (previously Layar and 6D.ai) that launched at GDC 2024 out of the a16z Speedrun
+  accelerator. Its rendering engine takes high-quality photorealistic 3D scenes and makes them
+  run at full resolution on any device, including the Apple Vision Pro, in a fraction of the
+  time and cost of a traditional visual-effects pipeline, bridging the gap between reality-capture
+  tools like Matterport and full VFX studios. As of this profiling the company appears dormant
+  as a developer surface, its djv.ai website is an expired Squarespace account and it publishes
+  no public API, developer documentation, SDK, or well-known metadata. Its GitHub organization
+  exists but is empty.
 url: https://raw.githubusercontent.com/api-evangelist/dejavu/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -9,14 +28,33 @@ x-backed-by:
 - a16z
 x-tier: stub
 x-tier-reason: portfolio-lead
+x-website: https://djv.ai
+x-website-status: expired-squarespace-account
+x-founder: Matt Miesnieks
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
 tags:
 - Company
+- 3D Graphics
+- Spatial Computing
+- Rendering
+- Extended Reality
+- Apple Vision Pro
+- Artificial Intelligence
+- a16z Speedrun
 apis: []
+common:
+- type: GitHubOrganization
+  url: https://github.com/dejavu-ai
+  name: dejavu GitHub organization (empty, 0 public repositories as of 2026-07-18)
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
